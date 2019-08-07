@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "493099665977",
+    "firebase_url": "https://geekychat-c2bd0.firebaseio.com",
+    "project_id": "geekychat-c2bd0",
+    "storage_bucket": "geekychat-c2bd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493099665977:android:f2926b75376c4b1c",
+        "android_client_info": {
+          "package_name": "com.geekyindonesia.geekychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493099665977-1o7h6dn94mbigeoi3a9vqghfiikom67u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOm2mxgwr5Axc18myu5kAZRUIWMUuvR1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493099665977-1o7h6dn94mbigeoi3a9vqghfiikom67u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
