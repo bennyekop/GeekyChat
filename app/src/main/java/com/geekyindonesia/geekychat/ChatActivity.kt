@@ -36,7 +36,7 @@ class ChatActivity : AppCompatActivity() {
         }
     }
 
-    private fun onMessageChange(messages: List<Item>) {
+    private fun onMessageChange(messages: List<com.xwray.groupie.kotlinandroidextensions.Item>) {
         toast("onMessageChange Berjalan !")
     }
 }
