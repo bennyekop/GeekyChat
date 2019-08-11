@@ -2,10 +2,7 @@ package com.geekyindonesia.geekychat.util
 
 import android.content.Context
 import android.util.Log
-import com.geekyindonesia.geekychat.model.ChatChannel
-import com.geekyindonesia.geekychat.model.MessageType
-import com.geekyindonesia.geekychat.model.TextMessage
-import com.geekyindonesia.geekychat.model.User
+import com.geekyindonesia.geekychat.model.*
 import com.geekyindonesia.geekychat.recyclerview.item.PersonItem
 import com.geekyindonesia.geekychat.recyclerview.item.TextMessageItem
 import com.google.firebase.auth.FirebaseAuth
@@ -119,10 +116,15 @@ object FirestoreUtil {
                     else
                         TODO("ini nanti buat pesan gambar")
                     // items.add(ImageMessageItem(it.toObject(ImageMessage::class.java)!!, context))
-                   // return@forEach
+                   return@forEach
                 }
                 onListen(items)
             }
     }
 
+    fun sendMessage(message: Message, channelId: String) {
+        chatChannelsCollectionRef.document(channelId)
+            .collection("messages")
+            .add(message)
+    }
 }
